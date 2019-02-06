@@ -32,7 +32,7 @@ const reducer = (state = initialState, action) => {
         }
     } else if (type === 'RESET') {
         return {
-            value: 0
+            value: initialState.value 
         }
     }
         
