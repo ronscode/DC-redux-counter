@@ -15,6 +15,10 @@ incrementButton.addEventListener('click', e => dispatch({ type: "INCREMENT" }));
 const decrementButton = document.getElementById('decrement');
 decrementButton.addEventListener('click', e => dispatch({ type: "DECREMENT" }));
 
+// Dispatch the "RESET" button
+const resetButton = document.getElementById('reset');
+resetButton.addEventListener('click', e => dispatch({ type: "RESET" }));
+
 // Dispatch the "INCREMENT_FIVE" action every time the +5 button is pressed
 const increment_five_Button = document.getElementById('increment_five');
 increment_five_Button.addEventListener('click', e => dispatch({ type: "INCREMENT_FIVE" }));

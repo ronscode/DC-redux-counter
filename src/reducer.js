@@ -30,6 +30,10 @@ const reducer = (state = initialState, action) => {
         return {
             value: action.color
         }
+    } else if (type === 'RESET') {
+        return {
+            value: 0
+        }
     }
         
 
